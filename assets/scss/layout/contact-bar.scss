@@ -18,7 +18,7 @@
 
     &__lang-button {
         height: 100%;
-        padding: 0 6px;
+        padding: 0 8px;
 
         display: flex;
         align-items: center;
@@ -26,6 +26,7 @@
         font: {
             size: 20px;
             style: normal;
+            weight: 300;
         }
 
         cursor: pointer;

@@ -1,0 +1,21 @@
+.header {
+    &__input {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @media all and (min-width: $md) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        &__logo-container {
+            width: 40%;
+        }
+
+        &__input {
+            width: 40%;
+        }
+    }
+}
