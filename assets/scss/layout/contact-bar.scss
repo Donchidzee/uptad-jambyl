@@ -1,0 +1,68 @@
+.contact-bar {
+    background: {
+        color: $blue-grey;
+    }
+
+    &__container {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__lang-switch {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__lang-button {
+        height: 100%;
+        padding: 0 6px;
+
+        display: flex;
+        align-items: center;
+
+        font: {
+            size: 20px;
+            style: normal;
+        }
+
+        cursor: pointer;
+
+        &_active {
+            background-color: #ffffff;
+        }
+    }
+
+    &__contact-info {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font: {
+            size: 15px;
+        }
+    
+    }
+
+    &__email-container, &__phone-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    @media all and (min-width: $lg) {
+        &__contact-info {
+            width: 43%;
+        }
+    }
+
+}

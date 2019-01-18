@@ -1,0 +1,48 @@
+.small-icon {
+    font: {
+        size: 22px;
+    }
+    cursor: pointer;
+}
+
+$icon-transition: 0.5s;
+
+.vk-icon {
+    $vk-color: #5082b9;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $vk-color;
+        transition: $icon-transition;
+    }
+}
+
+.instagram-icon {
+    $instagram-color: #d12798;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $instagram-color;
+        transition: $icon-transition;
+    }
+}
+
+.phone-icon {
+    $phone-color: #34de50;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $phone-color;
+        transition: $icon-transition;
+    }
+}
+
+.email-icon {
+    $email-color: #005ff9;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $email-color;
+        transition: $icon-transition;
+    }
+}
