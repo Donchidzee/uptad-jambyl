@@ -40,9 +40,6 @@
     }
 
     @media all and (min-width: $md) {
-        // TODO: Подобрать цвет активной и наведенной ссылки
-        $active-link-bg-color: rgb(60, 83, 134);
-
         position: relative;
         
         height: auto;
@@ -83,7 +80,7 @@
             &:hover {
                 color: white;
                 text-decoration: none;
-                background-color: $active-link-bg-color;
+                background-color: $hover-button-color;
                 transition: $link-transition;
             }
         }
