@@ -1,0 +1,15 @@
+.go-to-top-button {
+    $appear-time: 1s;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: $appear-time;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 4;
+
+    &_visible {
+        opacity: 1;
+        transition: $appear-time;
+    }
+}
