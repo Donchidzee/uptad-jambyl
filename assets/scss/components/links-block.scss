@@ -5,6 +5,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     &__item {
+        color: black;
         min-height: 70px;
         width: 100%;
         padding: 0 5px;
@@ -22,4 +23,24 @@
         }
     }
 
+    &__item:hover &__text {
+        text-decoration: none;
+        color: $color-1;
+    }
+    
+    &__collapse-text {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        font: {
+            size: 12px;
+        }
+        border-bottom: 1px solid $divider-color;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+            color: $color-1 !important;
+        }
+    }
 }
