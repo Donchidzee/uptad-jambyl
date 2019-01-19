@@ -1,6 +1,9 @@
 .person-info {
+    $button-transition: 1s;
     display: flex;
     justify-content: center;
+
+    transition: $button-transition;
 
     &__card {
         border-radius: 0;
@@ -20,6 +23,7 @@
         background-color: $color-1;
 
         &:hover {
+            transition: $button-transition;
             background-color: $hover-button-color;
         }
     }

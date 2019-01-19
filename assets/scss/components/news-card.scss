@@ -26,15 +26,23 @@
         margin-bottom: 10px;
         display: block;
         text-align: center;
+
+        transition: 0.5s;
         font: {
             size: 20px;
             weight: 800;
         }
     }
 
+    &:hover &__heading {
+        transition: 0.5s;
+        color: $color-1;
+    }
+
     &__text {
-        width: 80%;
-        display: block;
+        width: 90%;
         text-align: center;
     }
+
+    cursor: pointer;
 }
