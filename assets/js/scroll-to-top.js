@@ -15,10 +15,11 @@ window.onscroll = function() {
 function scrollToTop() {
     var position = window.pageYOffset;
     var timerId = setInterval(function() {
-        position -= 5;
-        window.scrollTo(0, position);
-        if (position < 200) {
+        position -= 10;
+        if (position < 0) {
+            window.scrollTo(0, 0);
             clearInterval(timerId);
         }
+        window.scrollTo(0, position);
     }, 2);
 }
