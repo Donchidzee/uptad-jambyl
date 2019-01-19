@@ -1,5 +1,4 @@
 .logo {
-    $divider-color: #e6e6e6;
 
     width: 100%;
     height: 200px;
@@ -7,6 +6,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    cursor: pointer;
 
     &__img {
         display: block;

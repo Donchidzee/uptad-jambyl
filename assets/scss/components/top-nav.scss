@@ -11,6 +11,7 @@
 
     transition: $transition;
     transform: translateX(-100%);
+    z-index: 3;
 
     &__container {
         height: 100%;
@@ -80,6 +81,8 @@
             transition: $link-transition;
 
             &:hover {
+                color: white;
+                text-decoration: none;
                 background-color: $active-link-bg-color;
                 transition: $link-transition;
             }

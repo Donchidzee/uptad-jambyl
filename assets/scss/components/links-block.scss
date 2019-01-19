@@ -1,0 +1,25 @@
+.links-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &__item {
+        min-height: 70px;
+        width: 100%;
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $divider-color;
+        cursor: pointer;
+    }
+
+    &__text {
+        width: 80%;
+        font: {
+            size: 15px;
+        }
+    }
+
+}
