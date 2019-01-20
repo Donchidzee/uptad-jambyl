@@ -1,0 +1,36 @@
+.odometer-block {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/assets/img/background/road.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__icon {
+        color: white;
+        font-size: 50px;
+    }
+
+    &__number {
+        margin-left: 10px;
+        color: white;
+        font : {
+            size: 50px;
+            weight: 500;
+        }
+    }
+
+    &__text {
+        display: block;
+        color: white;
+    }
+
+    @media all and (min-width: $md) {
+        flex-direction: row;
+
+    }
+}

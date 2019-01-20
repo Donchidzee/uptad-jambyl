@@ -4,7 +4,6 @@ $(document).ready(function(){
 
 window.onscroll = function() {
     var position = window.pageYOffset;
-    console.log(position);
     if (position > 300) {
         $('.go-to-top-button').addClass('go-to-top-button_visible');
     } else {

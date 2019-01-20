@@ -1,4 +1,5 @@
 .small-icon {
+    color: $secondary-text-color;
     font: {
         size: 22px;
     }
@@ -23,6 +24,47 @@ $icon-transition: 0.5s;
 
     &:hover {
         color: $instagram-color;
+        transition: $icon-transition;
+    }
+}
+
+.facebook-icon {
+    $facebook-color: #395498;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $facebook-color;
+        transition: $icon-transition;
+    }
+}
+
+.twitter-icon {
+    $twitter-color: #41abe1;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $twitter-color;
+        transition: $icon-transition;
+    }
+}
+
+.youtube-icon {
+    $youtube-color: #f70000;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $youtube-color;
+        transition: $icon-transition;
+    }
+
+}
+
+.telegram-icon {
+    $telegram-color: #33aee2;
+    transition: $icon-transition;
+
+    &:hover {
+        color: $telegram-color;
         transition: $icon-transition;
     }
 }
