@@ -83,6 +83,13 @@
                 background-color: $hover-button-color;
                 transition: $link-transition;
             }
+
+            &_long {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }
