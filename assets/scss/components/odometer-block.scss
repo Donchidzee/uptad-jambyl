@@ -9,7 +9,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 
     &__icon {
         color: white;
@@ -32,6 +31,7 @@
 
     @media all and (min-width: $md) {
         flex-direction: row;
+        background-attachment: fixed;
 
     }
 }
