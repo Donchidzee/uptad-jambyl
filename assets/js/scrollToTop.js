@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    $('.go-to-top-button').on('click', scrollToTop);
-});
+$('.go-to-top-button').on('click', scrollToTop);
 
 window.onscroll = function() {
     var position = window.pageYOffset;

@@ -1,7 +1,5 @@
-$(document).ready(function() {
-    $('.header__menu-open-button').on('click', openMobileMenu);
-    $('.top-nav__menu-close-button').on('click', closeMobileMenu);
-});
+$('.header__menu-open-button').on('click', openMobileMenu);
+$('.top-nav__menu-close-button').on('click', closeMobileMenu);
 
 function openMobileMenu(e) {
     e.preventDefault();

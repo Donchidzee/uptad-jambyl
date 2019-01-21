@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  .animated-search {
+    width: 200px;
+    transform: scale(0.65);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .search-box {
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  
+  .input {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    box-sizing: border-box;
+    width: 0px;
+    height: 63px;
+    padding: 0 20px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    color: #29313a;
+    border: 3px solid $color-1;
+    transition: all 0.8s ease;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $color-1;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color:$color-1;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $color-1;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-1;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: $color-1;
+    border-radius: 50%;
+    right: 45px;
+    top: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: #fff;
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input.active {
+    width: 350px;
+    right: 100px;
+  }
+  
+  .btn.animate {
+    transform: rotate(-360deg);
+    right: 100px;
+  }
