@@ -1,6 +1,6 @@
-$(".btn").click(function(){
-    $(".input").toggleClass("active").focus;
-    $(this).toggleClass("animate");
+$(".animated-search__btn").click(function(){
+    $(".animated-search__input").toggleClass("animated-search__input_active").focus;
+    $(this).toggleClass("animated-search__btn_active");
     $(".input").val("");
   });
   
