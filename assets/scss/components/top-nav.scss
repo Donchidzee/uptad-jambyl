@@ -11,7 +11,6 @@
 
     transition: $transition;
     transform: translateX(-100%);
-    z-index: 3;
 
     &__container {
         height: 100%;
@@ -37,6 +36,7 @@
     &_active {
         transition: $transition;
         transform: translateX(0);
+        z-index: 5;
     }
 
     @media all and (min-width: $md) {

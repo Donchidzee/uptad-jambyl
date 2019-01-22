@@ -1,0 +1,72 @@
+.fixed-contacts {
+    $hover-transition: 0.3s;
+    $text-transition: 0.2s;
+
+    position: fixed;
+    top: 25vh;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    z-index: 4;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__item:hover &__icon {
+        transition: $hover-transition;
+        width: 60px;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font: {
+            size: 20px;
+        }
+        transition: $hover-transition;
+    }
+
+    &__phone {
+        $phone-color: #34de50;
+        background-color: $phone-color;
+    }
+
+    &__email {
+        $email-color: #005ff9;
+        background-color: $email-color;
+    }
+
+    &__animated-text {
+        display: none;
+        width: 0;
+        height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font: {
+            weight: 500;
+        }
+        opacity: 0;
+        transition: $text-transition;
+
+        &_active {
+            height: 50px;
+            width: auto;
+            padding: 0 15px;
+            opacity: 1;
+            transition: $text-transition;
+        }
+    }
+}
