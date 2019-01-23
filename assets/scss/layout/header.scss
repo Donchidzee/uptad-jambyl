@@ -7,8 +7,14 @@
 
     @media all and (min-width: $md) {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+
+        background-image: url('/assets/img/background/flag.jpg');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: 80% 0%;
+        background-attachment: fixed;
         
         &__logo-container {
             width: 40%;

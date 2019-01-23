@@ -6,6 +6,10 @@
 
     @media all and (min-width: $md) {
       transform: scale(0.8);
+
+      &__input {
+        width: 300px !important;
+      }
     }
 
     &__search-box {
