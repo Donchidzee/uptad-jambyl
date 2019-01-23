@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Управление пассажирского транспорта и автомобильных дорог акимата Жамбылской области</title>
+    <title>{TITLE}</title>
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
     <!-- Add fonts Roboto -->
@@ -31,7 +31,6 @@
                 <div class="car-detail wheel"></div>
                 <div class="car-detail wheel wheel2"></div>
             </div>
-                        
             <div class="text">
                 <span>Loading</span><span class = "dots">...</span>
             </div>
@@ -55,8 +54,8 @@
     <div class="contact-bar container-fluid">
         <div class="contact-bar__container container">
             <div class="contact-bar__lang-switch">
-                <i class="contact-bar__kz-button contact-bar__lang-button"><a href="#">KAZ</a></i>
-                <i class="contact-bar__ru-button contact-bar__lang-button contact-bar__lang-button_active"><a href="#">RU</a></i>
+                <i class="contact-bar__kz-button contact-bar__lang-button" id="kz-button">KAZ</i>
+                <i class="contact-bar__ru-button contact-bar__lang-button contact-bar__lang-button_active" id="ru-button">RU</i>
             </div>
             <div class="contact-bar__contact-info">
                 <a href="#"><i class="fab fa-instagram small-icon contact-bar__icon instagram-icon"></i></a>
@@ -166,70 +165,11 @@
                     <a class="links-block__collapse-text">Видеоролики</a>
                 </div>
             </aside>
-            <div class="slider news-slider col-12 col-lg-7 mt-4 mt-lg-0">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/assets/img/news/1.png" class="news-slider__img d-block w-100" alt="news-slide">
-                        <div class="carousel-caption d-none d-md-block news-slider__text">
-                            <h5>Первая новость</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, suscipit.</p>
-                        </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/assets/img/news/slider_2.jpg" class="news-slider__img d-block w-100" alt="news-slide">
-                            <div class="carousel-caption d-none d-md-block news-slider__text">
-                                <h5>Вторая новость</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, esse?</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/assets/img/news/slider_3.jpg" class="news-slider__img d-block w-100" alt="news-slide">
-                            <div class="carousel-caption d-none d-md-block news-slider__text">
-                                <h5>Третья новость</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, architecto.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/assets/img/news/slider_1.jpg" class="news-slider__img d-block w-100" alt="news-slide">
-                            <div class="carousel-caption d-none d-md-block news-slider__text">
-                                <h5>Четвертая новость</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, architecto.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/assets/img/news/slider_2.jpg" class="news-slider__img d-block w-100" alt="news-slide">
-                            <div class="carousel-caption d-none d-md-block news-slider__text">
-                                <h5>Пятая новость</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, architecto.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/assets/img/news/slider_3.jpg" class="news-slider__img d-block w-100" alt="news-slide">
-                            <div class="carousel-caption d-none d-md-block news-slider__text">
-                                <h5>Шестая новость</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, architecto.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+            <main class="main news-slider col-12 col-lg-7 mt-4 mt-lg-0">
+                {CONTENT}
+            </main>
+
+                
             <div class="person-info col-12 col-lg-3 mt-4 mt-lg-0">
                 <div class="card person-info__card" style="width: 18rem;">
                     <img src="/assets/img/person-info/person.jpg" class="card-img-top person-info__img" alt="...">
@@ -244,59 +184,7 @@
         </div>
     </div>
 
-
-    <!-- Main content of the page -->
-    <main class="main mt-4">
-        <div class="container last-news">
-            <div class="row">
-                <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <img src="/assets/img/news/slider_1.jpg" alt="" class="news-card__img">
-                    <span class="news-card__add-time">19.01.2019</span>
-                    <span class="news-card__heading">Lorem, ipsum dolor.</span>
-                    <span class="news-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, blanditiis!</span>
-                </div>
-                <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <img src="/assets/img/news/slider_2.jpg" alt="" class="news-card__img">
-                    <span class="news-card__add-time">19.01.2019</span>
-                    <span class="news-card__heading">Lorem, ipsum dolor.</span>
-                    <span class="news-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, blanditiis!</span>
-                </div>
-                <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <img src="/assets/img/news/slider_3.jpg" alt="" class="news-card__img">
-                    <span class="news-card__add-time">19.01.2019</span>
-                    <span class="news-card__heading">Lorem, ipsum dolor.</span>
-                    <span class="news-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, blanditiis!</span>
-                </div>
-                <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
-                    <img src="/assets/img/news/slider_1.jpg" alt="" class="news-card__img">
-                    <span class="news-card__add-time">19.01.2019</span>
-                    <span class="news-card__heading">Lorem, ipsum dolor.</span>
-                    <span class="news-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, blanditiis!</span>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <div class="odometer-block container-fluid mt-5">
-        <div class="odometer-block__item">
-            <i class="fas fa-users odometer-block__icon"></i>
-            <span class="odometer-block__number">4564</span>
-            <span class="odometer-block__text">Довольных пользователей</span>
-        </div>
-        <div class="odometer-block__item mt-4 mt-lg-0 ml-md-5">
-            <i class="fas fa-users odometer-block__icon"></i>
-            <span class="odometer-block__number">3464</span>
-            <span class="odometer-block__text">Довольных пользователей</span>
-        </div>
-    </div>
-
-    <div class="map mt-5">
-        <div class="container">
-            <div class="map-container col-12 col-lg-10 offset-lg-1 justify-content-center">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A950fce7bd7e394bf4a6bdec8e51ce9c8eefbbf74d162af1d0a74404ab8f438a5&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
-        </div>
-    </div>
+    {CONTENT_FLUID}
 
     <footer class="footer">
         <div class="container mb-4">
@@ -329,10 +217,8 @@
 
     <script src="/assets/js/jquery-3.3.1.min.js" defer></script>
     <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-    <!-- Add library odometer -->
-    <!-- <script src="/assets/js/odometer.min.js"></script> -->
-    <!-- Add custom odometer script -->
-    <!-- <script src="/assets/js/odometer-custom.js" defer></script> -->
+
+    
     <script src="/assets/js/preloader.js" defer></script>
     <script src="/assets/js/mobileMenu.js" defer></script>
     <script src="/assets/js/scrollToTop.js" defer></script>
@@ -340,7 +226,6 @@
     <script src="/assets/js/fixed-contacts.js" defer></script>
 
 
-    <script src="/assets/js/showLastNews.js" defer></script>
 
 </body>
 </html>
