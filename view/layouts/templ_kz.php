@@ -68,11 +68,11 @@
     </div>
 
     <header class="header container">
-        <div class="header__logo-container logo">
+        <a class="header__logo-container logo" href="/">
             <img src="/assets/img/logo.png" alt="company logo" class="logo__img">
             <div class="logo__divider"></div>
             <h1 class="logo__text">Управление пассажирского транспорта и автомобильных дорог акимата Жамбылской области</h1>
-        </div>
+        </a>
 
         <div class="header__input">
             <i class="fas fa-bars header__menu-open-button icon-button hide-desktop"></i>
