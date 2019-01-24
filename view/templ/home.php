@@ -14,7 +14,7 @@
                     <span class="news-card__heading">Lorem, ipsum dolor.</span>
                     <span class="news-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, blanditiis!</span>
                 </div>
-                <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0\">
+                <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
                     <img src="/assets/img/news/slider_3.jpg" alt="news" class="news-card__img">
                     <span class="news-card__add-time">19.01.2019</span>
                     <span class="news-card__heading">Lorem, ipsum dolor.</span>
