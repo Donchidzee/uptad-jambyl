@@ -176,8 +176,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Джанибеков Бакытжан Оразалиевич</h5>
                         <h6 class="person-info__text-muted">Руководитель управления пассажирского транспорта и автомобильных дорог акимата Жамбылской области</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary person-info__button">Подробнее</a>
+                        <a href="#" class="btn btn-primary person-info__button mt-2">Подробнее</a>
                     </div>
                 </div>
             </div>
