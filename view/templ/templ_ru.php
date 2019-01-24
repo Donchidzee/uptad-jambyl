@@ -225,7 +225,7 @@
     <script src="/assets/js/animated-search.js" defer></script>
     <script src="/assets/js/fixed-contacts.js" defer></script>
 
-
+    <script src="/assets/js/lang-buttons.js"></script>
 
 </body>
 </html>

@@ -1,33 +1,28 @@
 <?php 
 
 class template_class {
-    var $values = array();
-    var $html;
+    private $values = array();
+    public $html;
 
-    function get_templ($lang) {
-        if ($lang === 'kz') {
-            $templ_name = 'templ/templ_kz.php';
-        } else {
-            $templ_name = 'templ/templ_ru.php';
-        }
+    public function get_templ($templ_path) {
 
-        if (empty($templ_name) || !file_exists($templ_name)) {
-            echo "eror";
+
+        if (empty($templ_path) || !file_exists($templ_path)) {
             return false;
         } else {
-            $this->html = get_file_contents($templ_name);
-            echo "It exists";
+            $this->html = file_get_contents($templ_path);
         }
     }
 
-    function set_values($key, $val) {
+    public function set_values($key, $val) {
         $key = '{' . $key . '}';
         $this->values[$key] = $val;
     }
 
-    function templ_parse() {
+    public function templ_parse() {
         foreach ($this->values as $find => $replace) {
             $this->html = str_replace($find, $replace, $this->html);
         }
     }
 }
+

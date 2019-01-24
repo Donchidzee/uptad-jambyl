@@ -4,15 +4,32 @@ var ruButton = document.getElementById('ru-button');
 kzButton.addEventListener('click', setLangKz);
 ruButton.addEventListener('click', setLangRu);
 
+// Проверяем cookie выбранного языка и проставляем классы для оформления кнопки
+if (getCookie('lang') === 'kz') {
+  ruButton.classList.remove('contact-bar__lang-button_active');
+  kzButton.classList.add('contact-bar__lang-button_active');
+} else {
+  kzButton.classList.remove('contact-bar__lang-button_active');
+  ruButton.classList.add('contact-bar__lang-button_active');
+}
+
 
 function setLangKz(e) {
+  if (getCookie('lang') !== 'kz') {
     setCookie('lang', 'kz');
+    location.reload();
     console.log(getCookie('lang'));
+  }
+
 }
 
 function setLangRu(e) {
+  if (getCookie('lang') !== 'ru') {
     setCookie('lang', 'ru');
+    location.reload();
     console.log(getCookie('lang'));
+  }
+
 }
 
 // возвращает cookie с именем name, если есть, если нет, то undefined
