@@ -1,4 +1,6 @@
 <?php
+    require_once "config/config.php";
+    require_once "db/db.php";
     require_once "lib/templ_engine.php";
 
     $tpl = new template_class;

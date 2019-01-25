@@ -1,0 +1,14 @@
+.all-news-card {
+    &__button {
+        $transition-time: 1s;
+        background-color: $color-1;
+        border: none;
+        transition: $transition-time;
+
+        &:hover {
+            background-color: $hover-button-color;
+            border: none;
+            transition: $transition-time;
+        }
+    }
+}

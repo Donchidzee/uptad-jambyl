@@ -96,7 +96,7 @@
         <i class="fas fa-times top-nav__menu-close-button icon-button hide-desktop"></i>
         <div class="top-nav__container">
             <a href="#" class="top-nav__link">Главная</a>
-            <a href="#" class="top-nav__link">Новости</a>
+            <a href="/controllers/allNewsController.php" class="top-nav__link">Новости</a>
             <a href="#" class="top-nav__link top-nav__link_long">Государственные символы</a>
             <a href="#" class="top-nav__link top-nav__link_long">Послание президента</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифровой Казахстан</a>
@@ -113,15 +113,15 @@
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-1">
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu.php">Положение КГУ "Управление здравоохранение акимата Жамбылской области"</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu">Положение КГУ "Управление здравоохранение акимата Жамбылской области"</a>
                     <a class="links-block__collapse-text" data-toggle="collapse" data-target="#collapse-1-1">Структура управления</a>
                     <div class="collapse links-block__collapse ml-2" id="collapse-1-1">
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure.php">Структура</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead.php">Руководитель управления</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHeadDeputy.php">Заместитель руководителя</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlDepartments.php">Отделы управления</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure">Структура</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead">Руководитель управления</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHeadDeputy">Заместитель руководителя</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlDepartments">Отделы управления</a>
                     </div>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=budget.php">Бюджет сферы пассажирского транспорта и автомобильных дорого областного значения</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=budget">Бюджет сферы пассажирского транспорта и автомобильных дорого областного значения</a>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-2">
                     <span class="links-block__text">Работа с населением</span>
@@ -130,7 +130,7 @@
                 <div class="collapse links-block__collapse" id="collapse-2">
                     <a class="links-block__collapse-text" data-toggle="collapse" data-target="#collapse-2-1">Вопросы о физических и юридических лицах</a>
                     <div class="collapse links-block__collapse ml-2" id="collapse-2-1">
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=workWithPopulation/questions&file_name=timeTable.php">График приема физических и юридических лиц</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=workWithPopulation/questions&file_name=timeTable">График приема физических и юридических лиц</a>
                     </div>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-3">
@@ -138,30 +138,30 @@
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-3">
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=code.php">Кодекс РК «О здоровье народа и системе здравоохранения»</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=govProgram.php">Государственная программа развития здравоохранения РК «Денсаулық» на 2016-2019 годы</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=nationPlan.php">План нации — 100 конкретных шагов</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=roadLaw.php">Закон об автомобильных дорогах РК</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=transportRoadLaw.php">Закон об автомобильных транспортных дорогах РК</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=code">Кодекс РК «О здоровье народа и системе здравоохранения»</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=govProgram">Государственная программа развития здравоохранения РК «Денсаулық» на 2016-2019 годы</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=nationPlan">План нации — 100 конкретных шагов</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=roadLaw">Закон об автомобильных дорогах РК</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=regulations&file_name=transportRoadLaw">Закон об автомобильных транспортных дорогах РК</a>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-4">
                     <span class="links-block__text">Государственные услуги</span>
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-4">
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesLaw.php">Закон РК "Об оказываемых государственных услугах"</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegistry.php">Реестр государственных услуг</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegulations.php">Стандарт оказываемых государственных услуг</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesStandart.php">Регламент оказываемых государственных услуг</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesLaw">Закон РК "Об оказываемых государственных услугах"</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegistry">Реестр государственных услуг</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegulations">Стандарт оказываемых государственных услуг</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesStandart">Регламент оказываемых государственных услуг</a>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-5">
                     <span class="links-block__text">Борьба против коррупции</span>
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-5">
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=strategy.php">Стратегия РК борьбы с коррупцией на 2015-2025 годы</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionLaw.php">Закон РК о борьбе с коррупцией</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionActivity.php">Мероприятия по противодействию коррупции</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=strategy">Стратегия РК борьбы с коррупцией на 2015-2025 годы</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionLaw">Закон РК о борьбе с коррупцией</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionActivity">Мероприятия по противодействию коррупции</a>
                     <a class="links-block__collapse-text" href="#">Видеоролики</a>
                 </div>
             </aside>
