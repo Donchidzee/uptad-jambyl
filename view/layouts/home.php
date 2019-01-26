@@ -1,5 +1,5 @@
 <!-- Main content of the page -->
-<div class="mt-4">
+<!-- <div class="mt-4">
     <div class="container last-news">
         <div class="row">
                 <div class="last-news__card news-card col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
@@ -28,7 +28,7 @@
                 </div>
             </div>
     </div>
-</div>
+</div> -->
 
     <div class="odometer-block container-fluid mt-5">
         <div class="odometer-block__item">

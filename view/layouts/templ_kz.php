@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="fixed-contacts">
+    <div class="fixed-contacts hide-mobile">
         <div class="fixed-contacts__item" id="fixed-contacts__phone-button">
             <i class="fas fa-phone fixed-contacts__icon fixed-contacts__phone"></i>
             <span class="fixed-contacts__animated-text fixed-contacts__phone" id="fixed-contacts__animated-phone-text">+7 707 789 34 56</span>
@@ -95,7 +95,7 @@
     <nav class="top-nav">
         <i class="fas fa-times top-nav__menu-close-button icon-button hide-desktop"></i>
         <div class="top-nav__container">
-            <a href="#" class="top-nav__link">Главная</a>
+            <a href="/" class="top-nav__link">Главная</a>
             <a href="/controllers/allNewsController.php" class="top-nav__link">Новости</a>
             <a href="#" class="top-nav__link top-nav__link_long">Государственные символы</a>
             <a href="#" class="top-nav__link top-nav__link_long">Послание президента</a>

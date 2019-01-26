@@ -6,11 +6,11 @@ class template_class {
 
     public function get_templ($templ_path) {
 
-
         if (empty($templ_path) || !file_exists($templ_path)) {
             return false;
         } else {
             $this->html = file_get_contents($templ_path);
+
         }
     }
 

@@ -35,7 +35,7 @@ foreach ($articles as $key => $article) {
         <div class="card-body">
             <h5 class="card-title">' . $article['title'] . '</h5>
             <i>Дата публикации: ' . $article['date'] . '</i>
-            <p class="card-text">' . $article['text'] . '</p>
+            <p class="card-text">' . substr($article['text'], 0, 300) . '...' . '</p>
             <a href="/controllers/article.php?id=' . $article['id'] . '" class="btn btn-primary all-news-card__button">Подробнее</a>
         </div>
     </div>';
