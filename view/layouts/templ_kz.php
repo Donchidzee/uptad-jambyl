@@ -183,7 +183,7 @@
         </div>
     </div>
 
-    {CONTENT_FLUID}
+    {CONTENT-FLUID}
 
     <footer class="footer">
         <div class="container mb-4">
