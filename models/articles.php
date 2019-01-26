@@ -5,9 +5,10 @@ function articles_all($connection) {
     $query = "SELECT * FROM articles ORDER BY id DESC";
     $result = mysqli_query($connection, $query);
 
-    if (!result) {
-        die(mysqli_error($connection));
-    }
+    // Выводит ошибку
+    // if (!result) {
+    //     die(mysqli_error($connection));
+    // }
 
     // Извлечение из базы данных в массив
     $n = mysqli_num_rows($result);
