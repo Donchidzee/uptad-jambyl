@@ -26,9 +26,9 @@ function get_article($connection, $article_id) {
     $query = sprintf("SELECT * FROM articles WHERE id=%d", (int)$article_id);
     $result = mysqli_query($connection, $query);
 
-    if (!result) {
-        die("Error: " . mysqli_error($connection));
-    }
+    // if (!result) {
+    //     die("Error: " . mysqli_error($connection));
+    // }
 
     $article = mysqli_fetch_assoc($result);
 

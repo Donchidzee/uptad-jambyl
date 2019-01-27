@@ -162,8 +162,11 @@
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=strategy">Стратегия РК борьбы с коррупцией на 2015-2025 годы</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionLaw">Закон РК о борьбе с коррупцией</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionActivity">Мероприятия по противодействию коррупции</a>
-                    <a class="links-block__collapse-text" href="#">Видеоролики</a>
                 </div>
+                <a class="links-block__item" href="/controllers/videoController.php">
+                    <span class="links-block__text">Видеоролики</span>
+                    <i class="fas fa-angle-right"></i>
+                </a>
             </aside>
             <main class="main news-slider col-12 col-lg-7 mt-4 mt-lg-0">
                 {CONTENT}
@@ -176,7 +179,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Джанибеков Бакытжан Оразалиевич</h5>
                         <h6 class="person-info__text-muted">Руководитель управления пассажирского транспорта и автомобильных дорог акимата Жамбылской области</h6>
-                        <a href="#" class="btn btn-primary person-info__button mt-2">Подробнее</a>
+                        <a href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead" class="btn btn-primary person-info__button mt-2">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -202,13 +205,14 @@
                     <a href="#" class="footer__link">Нормативно праввовые акты</a>
                     <a href="#" class="footer__link">Государственные услуги</a>
                     <a href="#" class="footer__link">Борьба против коррупции</a>
+                    <a href="/controllers/videoController.php" class="footer__link">Видеоролики</a>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row footer__copyright">
                     <i class="far fa-copyright"></i>
-                    <span class="footer__copyright-text">TOO "Mechanic-Steel KZ"</span>
+                    <span class="footer__copyright-text">UPTAD-JAMBYL</span>
             </div>
         </div>
     </footer>
