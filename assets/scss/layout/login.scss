@@ -1,0 +1,24 @@
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__button {
+        background-color: $color-1;
+        border: none;
+
+        &:hover {
+            background-color: $hover-button-color;
+            border: none;
+        }
+    }
+
+
+    &__home-link {
+        width: 200px;;
+    }
+
+}

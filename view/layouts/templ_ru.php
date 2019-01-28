@@ -206,6 +206,7 @@
                     <a href="#" class="footer__link">Государственные услуги</a>
                     <a href="#" class="footer__link">Борьба против коррупции</a>
                     <a href="/controllers/videoController.php" class="footer__link">Видеоролики</a>
+                    <a href="/admin/adminController.php" class="footer__link">Войти</a>
                 </div>
             </div>
         </div>

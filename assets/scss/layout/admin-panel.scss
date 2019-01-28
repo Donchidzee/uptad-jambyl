@@ -1,0 +1,41 @@
+.admin-panel {
+    width: 100%;
+
+    &__nav {
+        $nav-color: #23282c;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $nav-color;
+    }
+
+    &__link {
+        $transition: 1s;
+        width: 100%;
+        padding: 15px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: $transition;
+
+        &:hover {
+            transition: $transition;
+            background-color: #32373b;
+        }
+    }
+
+    &__text, &__icon {
+        $text-color: #b4c1be;
+        color: $text-color;
+    }
+
+    &__text {
+        margin-left: 20px;
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+}

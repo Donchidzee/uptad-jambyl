@@ -34,3 +34,7 @@ function get_article($connection, $article_id) {
 
     return $article;
 }
+
+function deleteArticle($id) {
+    
+}

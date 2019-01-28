@@ -1,0 +1,33 @@
+<h1 class="text-center">Добавить статью</h1>
+<form method="POST" action="/admin/addArticle.php" class="col-12 col-lg-10 offset-1 mt-5">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="title_kz">Заголовок на казахском</label>
+            <input type="email" class="form-control" id="title_kz" placeholder="Заголовок на казахском">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="title_ru">Заголовок на русском</label>
+            <input type="text" class="form-control" id="title_ru" placeholder="Заголовок на русском">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="text_kz">Текст на казахском</label>
+        <textarea class="form-control" id="text_kz" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="text_ru">Текст на русском</label>
+        <textarea class="form-control" id="text_ru" rows="3"></textarea>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="date">Выберите дату публикации</label>
+            <input type="date" class="form-control" id="date" placeholder="Заголовок на русском">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="image">Название картинки</label>
+            <input type="text" class="form-control" id="image" placeholder="Название картинки">
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Добавить</button>
+</form>

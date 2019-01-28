@@ -26,17 +26,11 @@
         if ($i === 0) {
             $slider_items .=    '<div class="carousel-item active">
                                     <img src="/assets/img/news/' . $articles[$i]['image'] . '" class="news-slider__img d-block w-100" alt="news-slide">
-                                    <div class="carousel-caption d-none d-md-block news-slider__text">
-                                        <h5>' . $articles[$i]['title'] . '</h5>
-                                    </div>
                                 </div>';
             continue;
         }
         $slider_items .=    '<div class="carousel-item">
                                 <img src="/assets/img/news/' . $articles[$i]['image'] . '" class="news-slider__img d-block w-100" alt="news-slide">
-                                <div class="carousel-caption d-none d-md-block news-slider__text">
-                                    <h5>' . $articles[$i]['title'] . '</h5>
-                                </div>
                             </div>';
     }
 

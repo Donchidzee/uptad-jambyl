@@ -1,16 +1,16 @@
 <?php
 
 // Для локалки
-// define('MYSQL_SERVER', 'localhost');
-// define('MYSQL_USER', 'root');
-// define('MYSQL_PASSWORD', '');
-// define('MYSQL_DB', 'uptad-jambyl');
+define('MYSQL_SERVER', 'localhost');
+define('MYSQL_USER', 'root');
+define('MYSQL_PASSWORD', '');
+define('MYSQL_DB', 'uptad-jambyl');
 
 // Для сервера 
-define('MYSQL_SERVER', 'localhost');
-define('MYSQL_USER', 'p-16743');
-define('MYSQL_PASSWORD', '1zDJ13RMNzT2');
-define('MYSQL_DB', 'uptad-jambyl');
+// define('MYSQL_SERVER', 'localhost');
+// define('MYSQL_USER', 'p-16743');
+// define('MYSQL_PASSWORD', '1zDJ13RMNzT2');
+// define('MYSQL_DB', 'uptad-jambyl');
 
 function db_connect() {
     $connection = mysqli_connect(MYSQL_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB)
