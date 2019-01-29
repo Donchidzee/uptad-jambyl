@@ -1,0 +1,33 @@
+<h1 class="text-center">Редактировать статью</h1>
+<form method="POST" action="/admin/adminControllers/editArticleController.php" class="col-12 col-lg-10 offset-1 mt-5">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="title_kz">Заголовок на казахском</label>
+            <input value="{TITLE_KZ}" type="text" name="title_kz" class="form-control" id="title_kz" placeholder="Заголовок на казахском" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="title_ru">Заголовок на русском</label>
+            <input value="{TITLE_RU}" type="text" name="title_ru" class="form-control" id="title_ru" placeholder="Заголовок на русском" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="text_kz">Текст на казахском</label>
+        <textarea class="form-control" name="text_kz" id="text_kz" rows="3" required>{TEXT_KZ}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="text_ru">Текст на русском</label>
+        <textarea class="form-control" name="text_ru" id="text_ru" rows="3" required>{TEXT_RU}</textarea>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="date">Выберите дату публикации</label>
+            <input value="{DATE}" type="date" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="image">Название картинки</label>
+            <input  value="{IMAGE}" type="text" class="form-control" id="image" placeholder="Название картинки" name="image" required>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>

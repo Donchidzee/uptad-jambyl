@@ -9,11 +9,11 @@ require_once "../lib/templ_engine.php";
 
 
 //unset($_SESSION['logined']);
+$tpl = new template_class;
 
 // Проверяем, зашел ли пользователь
 if ($_SESSION['logined']) {
 
-    $tpl = new template_class;
     $tpl->get_templ('admin_layouts/admin_templ.html');
 
     // Определяем какое действие надо выполнить
@@ -25,9 +25,9 @@ if ($_SESSION['logined']) {
         if ($action === 'delete') {
             deleteArticle($id);
         } elseif ($action === 'edit') {
-            editArticle($id);
+            $content = editArticleMode($article_id);
         } elseif ($action === 'add') {
-            $content = addArticle();
+            $content = addArticleMode();
         }
         
         
@@ -70,9 +70,27 @@ function showAllArticles() {
 }
 
 
-function addArticle() {
+function addArticleMode() {
     $add_tpl = new template_class;
     $add_tpl->get_templ('admin_layouts/add_article.html');
 
     return $add_tpl->html;
+}
+
+function editArticleMode($article_id) {
+    $connection = db_connect();
+    $article = get_article($connection, $article_id);
+
+    $edit_tpl = new template_class;
+    $edit_tpl->get_templ('admin_layouts/edit_article.html');
+
+    $edit_tpl->set_values('TITLE_KZ', $article['title_kz']);
+    $edit_tpl->set_values('TITLE_RU', $article['title_ru']);
+    $edit_tpl->set_values('TEXT_KZ', $article['text_kz']);
+    $edit_tpl->set_values('TEXT_RU', $article['text_ru']);
+    $edit_tpl->set_values('DATE', $article['date']);
+    $edit_tpl->set_values('IMAGE', $article['image']);
+
+    $edit_tpl->templ_parse();
+    return $edit_tpl->html;
 }
