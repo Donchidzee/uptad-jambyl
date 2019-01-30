@@ -4,10 +4,10 @@ require_once "../../config/config.php";
 require_once "../../db/db.php";
 require_once "../../models/articles.php";
 
-if (!empty($_POST)) {
+if (!empty($_POST) && !empty($_GET)) {
     $connection = db_connect();
     
-    $id = $_POST['id'];
+    $id = $_GET['id'];
     $title_kz = $_POST['title_kz'];
     $title_ru = $_POST['title_ru'];
     $text_kz = $_POST['text_kz'];

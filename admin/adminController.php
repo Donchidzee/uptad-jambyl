@@ -84,6 +84,7 @@ function editArticleMode($article_id) {
     $edit_tpl = new template_class;
     $edit_tpl->get_templ('admin_layouts/edit_article.html');
 
+    $edit_tpl->set_values('ID', $article_id);
     $edit_tpl->set_values('TITLE_KZ', $article['title_kz']);
     $edit_tpl->set_values('TITLE_RU', $article['title_ru']);
     $edit_tpl->set_values('TEXT_KZ', $article['text_kz']);
