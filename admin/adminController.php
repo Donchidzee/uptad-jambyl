@@ -23,7 +23,9 @@ if ($_SESSION['logined']) {
         $article_id = $_GET['id'];
 
         if ($action === 'delete') {
-            deleteArticle($id);
+            $connection = db_connect();
+            deleteArticle($connection, $article_id);
+            header('Location: /admin/adminController.php');
         } elseif ($action === 'edit') {
             $content = editArticleMode($article_id);
         } elseif ($action === 'add') {

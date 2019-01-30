@@ -91,6 +91,15 @@ function editArticle($connection, $id, $image, $date, $title_kz, $title_ru, $tex
     return mysqli_affected_rows($connection);
 }
 
-function deleteArticle($id) {
-    
+function deleteArticle($connection, $id) {
+    $id = (int)$id;
+
+    if ($id === 0) {
+        return false;
+    }
+
+    $query = sprintf("DELETE FROM articles WHERE id='%d'", $id);
+    $result = mysqli_query($connection, $query);
+
+    return mysqli_affected_rows($connection);
 }

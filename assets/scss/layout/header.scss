@@ -6,6 +6,7 @@
     }
 
     @media all and (min-width: $md) {
+        width: 95%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,15 +14,16 @@
         background-image: url('/assets/img/background/flag.jpg');
         background-repeat: no-repeat;
         background-size: 50%;
-        background-position: 80% 0%;
+        background-position: 85% 0%;
         background-attachment: fixed;
+
         
         &__logo-container {
-            width: 40%;
+            width: 35%;
         }
 
         &__input {
-            width: 40%;
+            width: 35%;
         }
     }
 
