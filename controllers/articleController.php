@@ -24,7 +24,7 @@ $article = get_article($connection, $article_id);
 // Получаем шаблон в зависимости от установленного языка
 if(isset($_COOKIE['lang']) && $_COOKIE['lang'] === 'kz') {
     $tpl->get_templ($kz_templ_path);
-    $tpl->set_values('TITLE', 'Последние новости');
+    $tpl->set_values('TITLE', 'Соңғы жаңалықтар');
     $lang = 'kz';
     $content = get_kz_content();
     

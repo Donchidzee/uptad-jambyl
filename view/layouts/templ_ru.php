@@ -78,17 +78,18 @@
 
         <div class="header__input">
             <i class="fas fa-bars header__menu-open-button icon-button hide-desktop"></i>
-            <div class="search-field header__search">
-                <!-- <input type="text" name="search-field" class="search-field__input" placeholder="Search..."> -->
+            <form class="search-field header__search" action="/controllers/searchController.php" method="get">
                 <div class="animated-search">
                     <div class="animated-search__search-box">
-                        <input type="text" placeholder="Search" class="animated-search__input">
-                        <div class="animated-search__btn">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
+                        <input type="text" placeholder="Search" class="animated-search__input" name="search">
+                        <button type="submit">
+                            <div class="animated-search__btn">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
 
         

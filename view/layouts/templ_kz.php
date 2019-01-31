@@ -73,22 +73,23 @@
         <a class="header__logo-container logo" href="/">
             <img src="/assets/img/logo.png" alt="company logo" class="logo__img">
             <div class="logo__divider"></div>
-            <h1 class="logo__text">Жамбыл облысының әкімділігі және автокөлік жолдарының басқармасы</h1>
+            <h1 class="logo__text">Жамбыл облысы әкімдігінің жолаушылар көлігі және автомобиль жолдары басқармасы</h1>
         </a>
 
         <div class="header__input">
             <i class="fas fa-bars header__menu-open-button icon-button hide-desktop"></i>
-            <div class="search-field header__search">
-                <!-- <input type="text" name="search-field" class="search-field__input" placeholder="Search..."> -->
+            <form class="search-field header__search" action="/controllers/searchController.php" method="get">
                 <div class="animated-search">
                     <div class="animated-search__search-box">
-                        <input type="text" placeholder="Search" class="animated-search__input">
-                        <div class="animated-search__btn">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
+                        <input type="text" placeholder="Search" class="animated-search__input" name="search">
+                        <button type="submit">
+                            <div class="animated-search__btn">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
 
         
@@ -99,11 +100,11 @@
         <div class="top-nav__container">
             <a href="/" class="top-nav__link">Басты бет</a>
             <a href="/controllers/allNewsController.php" class="top-nav__link">Жаңалықтар</a>
-            <a href="#" class="top-nav__link">Рәміздер</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Елбасы жолдауы</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Цифровой Казахстан</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Баспасөз бөлмесі</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Қоғамдық сұрақтар</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Мемлекеттік Рәміздер</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Президент жолдауы</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Цифрлік Қазақстан</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Пресс-орталығы</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Әлеуметтік мәселелер</a>
         </div>
     </nav>
 
@@ -111,7 +112,7 @@
         <div class="row  justify-content-center">
             <aside class="links-block col-11 col-lg-2">
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-1">
-                    <span class="links-block__text">Басқару туралы</span>
+                    <span class="links-block__text">Басқару</span>
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-1">
@@ -126,7 +127,7 @@
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=budget">Облыстық маңызы бар жолаушылар көлігі және автомобиль жолдары саласының бюджеті</a>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-2">
-                    <span class="links-block__text">Қоғаммен жұмыс</span>
+                    <span class="links-block__text">Халықпен жұмыс</span>
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-2">
@@ -180,8 +181,8 @@
                     <img src="/assets/img/person-info/person.jpg" class="card-img-top person-info__img" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">Джанибеков Бакытжан Оразалиевич</h5>
-                        <h6 class="person-info__text-muted">Руководитель управления пассажирского транспорта и автомобильных дорог акимата Жамбылской области</h6>
-                        <a href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead" class="btn btn-primary person-info__button mt-2">Подробнее</a>
+                        <h6 class="person-info__text-muted">Жамбыл облысы әкімдігінің жолаушылар көлігі және автокөлік жолдары басқармасының бастығы</h6>
+                        <a href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead" class="btn btn-primary person-info__button mt-2">Толығырақ</a>
                     </div>
                 </div>
             </div>
@@ -194,7 +195,7 @@
         <div class="container mb-4">
             <div class="row">
                 <div class="footer__contacts col-12 col-lg-6">
-                    <h5 class="footer__heading">Контакты</h5>
+                    <h5 class="footer__heading">Байланыс</h5>
                     <span class="footer__text">Юридический адрес: РК, г. Алматы, Алатауский район, ул. Нурпеисова, здание 1, н.п. 1</span>
                     <span class="footer__text">Филиал АО “ForteBank” в г. Алматы</span>
                     <span class="footer__text">Телефон: +7 (727) 246 32 51</span>
@@ -204,9 +205,9 @@
                     <h5 class="footer__heading">Пайдалы сілтемелер</h5>
                     <a href="#" class="footer__link">Басты бет</a>
                     <a href="#" class="footer__link">Жаңалықтар</a>
-                    <a href="#" class="footer__link">Елбасы жолдауы</a>
-                    <a href="#" class="footer__link">Цифровой Казахстан</a>
-                    <a href="#" class="footer__link">Баспасөз бөлмесі</a>
+                    <a href="#" class="footer__link">Президент жолдауы</a>
+                    <a href="#" class="footer__link">Цифрлік Қазақстан</a>
+                    <a href="#" class="footer__link">Пресс-орталығы</a>
                     <a href="#" class="footer__link">Қоғамдық сұрақтар</a>
                     <a href="/controllers/videoController.php" class="footer__link">Бейнебаяндар</a>
                     <a href="/admin/adminController.php" class="footer__link">Кіру</a>

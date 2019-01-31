@@ -75,7 +75,7 @@ function get_kz_content() {
                 <h5 class="card-title">' . $article['title_kz'] . '</h5>
                 <i>Дата публикации: ' . $article['date'] . '</i>
                 <p class="card-text">' . substr($article['text_kz'], 0, 300) . '...' . '</p>
-                <a href="/controllers/articleController.php?id=' . $article['id'] . '" class="btn btn-primary all-news-card__button">Подробнее</a>
+                <a href="/controllers/articleController.php?id=' . $article['id'] . '" class="btn btn-primary all-news-card__button">Толығырақ</a>
             </div>
         </div>';
     }
