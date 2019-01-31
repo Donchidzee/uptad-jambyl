@@ -1,0 +1,8 @@
+AddDefaultCharset utf-8
+RewriteCond %{HTTP:X_FORWARDED_PROTO} !https [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+DirectoryIndex index.php
+ErrorDocument 401 https://aptad-jambyl.kz/
+ErrorDocument 403 https://aptad-jambyl.kz/
+ErrorDocument 404 https://aptad-jambyl.kz/
+ErrorDocument 500 https://aptad-jambyl.kz/

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{DESC}">
+    <meta name="author" content="Onlasyn Sayazhan">
     <title>{TITLE}</title>
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
@@ -97,10 +99,10 @@
         <div class="top-nav__container">
             <a href="/" class="top-nav__link">Басты бет</a>
             <a href="/controllers/allNewsController.php" class="top-nav__link">Жаңалықтар</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Рәміздер</a>
+            <a href="#" class="top-nav__link">Рәміздер</a>
             <a href="#" class="top-nav__link top-nav__link_long">Елбасы жолдауы</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифровой Казахстан</a>
-            <a href="#" class="top-nav__link">Баспасөз бөлмесі</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Баспасөз бөлмесі</a>
             <a href="#" class="top-nav__link top-nav__link_long">Қоғамдық сұрақтар</a>
         </div>
     </nav>
