@@ -1,8 +1,7 @@
 AddDefaultCharset utf-8
-RewriteCond %{HTTP:X_FORWARDED_PROTO} !https [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-DirectoryIndex index.php
-ErrorDocument 401 https://aptad-jambyl.kz/
-ErrorDocument 403 https://aptad-jambyl.kz/
-ErrorDocument 404 https://aptad-jambyl.kz/
-ErrorDocument 500 https://aptad-jambyl.kz/
+RewriteCond %{SERVER_PORT} !^443$ 
+RewriteRule ^(.*)$ https://uptad-jambyl.kz/$1 [R=301,L]
+ErrorDocument 401 https://uptad-jambyl.kz/
+ErrorDocument 403 https://uptad-jambyl.kz/
+ErrorDocument 404 https://uptad-jambyl.kz/
+ErrorDocument 500 https://uptad-jambyl.kz/
