@@ -82,11 +82,9 @@
                 <div class="animated-search">
                     <div class="animated-search__search-box">
                         <input type="text" placeholder="Search" class="animated-search__input" name="search">
-                        <button type="submit">
-                            <div class="animated-search__btn">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </div>
-                        </button>
+                        <div class="animated-search__btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </form>

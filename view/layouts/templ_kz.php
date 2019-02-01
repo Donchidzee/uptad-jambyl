@@ -119,10 +119,10 @@
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu">«Жамбыл облысы әкімдігінің денсаулық сақтау басқармасы» ҚММ</a>
                     <a class="links-block__collapse-text" data-toggle="collapse" data-target="#collapse-1-1">Басқару құрылымы</a>
                     <div class="collapse links-block__collapse ml-2" id="collapse-1-1">
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure">Структура</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead">Руководитель управления</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHeadDeputy">Заместитель руководителя</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlDepartments">Отделы управления</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure">Құрылым</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead">Басқарма бастығы</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHeadDeputy">Бастықтың орынбасары</a>
+                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlDepartments">Басқару бөлімдері</a>
                     </div>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=budget">Облыстық маңызы бар жолаушылар көлігі және автомобиль жолдары саласының бюджеті</a>
                 </div>
@@ -180,7 +180,7 @@
                 <div class="card person-info__card" style="width: 18rem;">
                     <img src="/assets/img/person-info/person.jpg" class="card-img-top person-info__img" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Джанибеков Бакытжан Оразалиевич</h5>
+                        <h5 class="card-title text-center">Жәнібеков Бақытжан Оразалыұлы</h5>
                         <h6 class="person-info__text-muted">Жамбыл облысы әкімдігінің жолаушылар көлігі және автокөлік жолдары басқармасының бастығы</h6>
                         <a href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead" class="btn btn-primary person-info__button mt-2">Толығырақ</a>
                     </div>

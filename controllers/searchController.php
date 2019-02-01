@@ -14,6 +14,12 @@ $tpl = new template_class;
 $ru_templ_path = '../view/layouts/templ_ru.php';
 $kz_templ_path = '../view/layouts/templ_kz.php';
 
+if(isset($_GET['search'])){
+    $search = $_GET['search'];
+} else {
+    header('Location: /');
+}
+
 // Получаем шаблон в зависимости от установленного языка
 if(isset($_COOKIE['lang']) && $_COOKIE['lang'] === 'kz') {
     $tpl->get_templ($kz_templ_path);
@@ -25,16 +31,25 @@ if(isset($_COOKIE['lang']) && $_COOKIE['lang'] === 'kz') {
     $lang = 'ru';
 }
 
-if(isset($_GET['search'])){
-    $search = $_GET['search'];
-} else {
-    header('Location: /');
-}
 
-foreach ($articles as $key => $article) {
+$content = '';
+
+if ($lang === 'kz') {
+    foreach ($articles as $key => $article) {
+        if (contains($search, $article['title_kz']) || contains($search, $article['title_ru'])) {
+                $content .= get_kz_content($article);
+        }
     
-
+    }
+} else {
+    foreach ($articles as $key => $article) {
+        if (contains($search, $article['title_kz']) || contains($search, $article['title_ru'])) {
+                $content .= get_ru_content($article);
+        }
+    
+    }
 }
+
 
 
 // Добавляем новости в шаблон
@@ -70,18 +85,18 @@ function get_ru_content($article) {
     return $content;
 }
 
-function get_kz_content() {
+function get_kz_content($article) {
     $content = '';
 
-    $content = '<div class="card mb-3 all-news-card">
-        <img src="/assets/img/news/' . $article['image'] . '" class="card-img-top" alt="Фотография статьи">
-        <div class="card-body">
-            <h5 class="card-title">' . $article['title_kz'] . '</h5>
-            <i>Дата публикации: ' . $article['date'] . '</i>
-            <p class="card-text">' . substr($article['text_kz'], 0, 300) . '...' . '</p>
-            <a href="/controllers/articleController.php?id=' . $article['id'] . '" class="btn btn-primary all-news-card__button">Толығырақ</a>
-        </div>
-    </div>';
+    $content .= '<div class="card mb-3 all-news-card">
+            <img src="/assets/img/news/' . $article['image'] . '" class="card-img-top" alt="Фотография статьи">
+            <div class="card-body">
+                <h5 class="card-title">' . $article['title_kz'] . '</h5>
+                <i>Дата публикации: ' . $article['date'] . '</i>
+                <p class="card-text">' . substr($article['text_kz'], 0, 300) . '...' . '</p>
+                <a href="/controllers/articleController.php?id=' . $article['id'] . '" class="btn btn-primary all-news-card__button">Толығырақ</a>
+            </div>
+        </div>';
     
 
     return $content;

@@ -4,14 +4,6 @@
     justify-content: flex-end;
     align-items: center;
 
-    @media all and (min-width: $md) {
-      transform: scale(0.8);
-
-      &__input {
-        width: 300px !important;
-      }
-    }
-
     &__search-box {
       height: 100px;
       position: relative;
@@ -33,10 +25,11 @@
       transition: all 0.8s ease;
 
       &_active {
-        width: 250px;
-        //right: 100px;
+        width: 200px;
       }
     }
+
+    
 
     &__btn {
       position: absolute;
@@ -59,6 +52,14 @@
       &_active {
         transform: rotate(-360deg);
         //right: 100px;
+      }
+    }
+
+    @media all and (min-width: $md) {
+      transform: scale(0.8);
+
+      &__input {
+        width: 300px !important;
       }
     }
   }
