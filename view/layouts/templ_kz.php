@@ -116,7 +116,7 @@
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-1">
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu">«Жамбыл облысы әкімдігінің денсаулық сақтау басқармасы» ҚММ</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu">«Жамбыл облысы әкімдігінің жолаушылар көлігі және автомобиль жолдары басқармасы» КММ туралы ереже</a>
                     <a class="links-block__collapse-text" data-toggle="collapse" data-target="#collapse-1-1">Басқару құрылымы</a>
                     <div class="collapse links-block__collapse ml-2" id="collapse-1-1">
                         <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure">Құрылым</a>

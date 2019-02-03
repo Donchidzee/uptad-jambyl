@@ -114,7 +114,7 @@
                     <i class="fas fa-angle-right"></i>
                 </a>
                 <div class="collapse links-block__collapse" id="collapse-1">
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu">Положение КГУ "Управление здравоохранение акимата Жамбылской области"</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl&file_name=kgu">Положение КГУ "Управления пассажирского транспорта и автомобильных дорог акимата Жамбылской области"</a>
                     <a class="links-block__collapse-text" data-toggle="collapse" data-target="#collapse-1-1">Структура управления</a>
                     <div class="collapse links-block__collapse ml-2" id="collapse-1-1">
                         <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure">Структура</a>

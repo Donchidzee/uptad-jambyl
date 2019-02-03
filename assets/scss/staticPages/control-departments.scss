@@ -1,0 +1,12 @@
+.control-departments {
+    & h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    & td, & th {
+        height: 40px;
+        text-align: center;
+        vertical-align: top;
+    }
+}

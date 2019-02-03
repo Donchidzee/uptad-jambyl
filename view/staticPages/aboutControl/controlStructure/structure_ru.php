@@ -1,0 +1,1 @@
+<img src="/assets/img/structure/structure_ru.jpg" alt="Структура управления" width="100%">

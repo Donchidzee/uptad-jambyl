@@ -1,0 +1,1 @@
+<img src="/assets/img/structure/structure_kz.jpg" alt="Басқару құрылымы" width="100%">
