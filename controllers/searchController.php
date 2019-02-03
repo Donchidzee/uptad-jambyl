@@ -36,18 +36,21 @@ $content = '';
 
 // Переводим запрос в нижний регистр
 $search = mb_convert_case($search, MB_CASE_LOWER, "UTF-8"); 
-echo $search;
 
 if ($lang === 'kz') {
     foreach ($articles as $key => $article) {
-        if (contains($search, strtolower($article['title_kz'])) || contains($search, strtolower($article['title_ru']))) {
+        $title_kz = mb_convert_case($article['title_kz'], MB_CASE_LOWER, "UTF-8"); 
+        $title_ru = mb_convert_case($article['title_ru'], MB_CASE_LOWER, "UTF-8"); 
+        if (contains($search, $title_kz) || contains($search, $title_ru)) {
                 $content .= get_kz_content($article);
         }
     
     }
 } else {
     foreach ($articles as $key => $article) {
-        if (contains($search, strtolower($article['title_kz'])) || contains($search, strtolower($article['title_ru']))) {
+        $title_kz = mb_convert_case($article['title_kz'], MB_CASE_LOWER, "UTF-8"); 
+        $title_ru = mb_convert_case($article['title_ru'], MB_CASE_LOWER, "UTF-8"); 
+        if (contains($search, $title_kz) || contains($search, $title_ru)) {
                 $content .= get_ru_content($article);
         }
     
