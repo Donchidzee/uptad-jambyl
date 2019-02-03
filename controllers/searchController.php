@@ -34,16 +34,20 @@ if(isset($_COOKIE['lang']) && $_COOKIE['lang'] === 'kz') {
 
 $content = '';
 
+// Переводим запрос в нижний регистр
+$search = mb_convert_case($search, MB_CASE_LOWER, "UTF-8"); 
+echo $search;
+
 if ($lang === 'kz') {
     foreach ($articles as $key => $article) {
-        if (contains($search, $article['title_kz']) || contains($search, $article['title_ru'])) {
+        if (contains($search, strtolower($article['title_kz'])) || contains($search, strtolower($article['title_ru']))) {
                 $content .= get_kz_content($article);
         }
     
     }
 } else {
     foreach ($articles as $key => $article) {
-        if (contains($search, $article['title_kz']) || contains($search, $article['title_ru'])) {
+        if (contains($search, strtolower($article['title_kz'])) || contains($search, strtolower($article['title_ru']))) {
                 $content .= get_ru_content($article);
         }
     

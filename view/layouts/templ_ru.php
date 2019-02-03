@@ -98,7 +98,7 @@
         <div class="top-nav__container">
             <a href="/" class="top-nav__link">Главная</a>
             <a href="/controllers/allNewsController.php" class="top-nav__link">Новости</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Государственные символы</a>
+            <a href="/controllers/staticPagesController.php?path=symbols&file_name=symbols" class="top-nav__link top-nav__link_long">Государственные символы</a>
             <a href="#" class="top-nav__link top-nav__link_long">Послание президента</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифровой Казахстан</a>
             <a href="#" class="top-nav__link">Пресс-центр</a>
@@ -118,7 +118,7 @@
                     <a class="links-block__collapse-text" data-toggle="collapse" data-target="#collapse-1-1">Структура управления</a>
                     <div class="collapse links-block__collapse ml-2" id="collapse-1-1">
                         <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=structure">Структура</a>
-                        <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHead">Руководитель управления</a>
+                        <a class="links-block__collapse-text" href="c">Руководитель управления</a>
                         <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlHeadDeputy">Заместитель руководителя</a>
                         <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=aboutControl/controlStructure&file_name=controlDepartments">Отделы управления</a>
                     </div>
@@ -201,11 +201,13 @@
                 </div>
                 <div class="footer__links col-12 col-lg-5 offset-lg-1 mt-3 mt-lg-0">
                     <h5 class="footer__heading">Полезные ссылки</h5>
-                    <a href="#" class="footer__link">Об управлении</a>
-                    <a href="#" class="footer__link">Работа с населением</a>
-                    <a href="#" class="footer__link">Нормативно праввовые акты</a>
-                    <a href="#" class="footer__link">Государственные услуги</a>
-                    <a href="#" class="footer__link">Борьба против коррупции</a>
+                    <a href="/" class="footer__link">Главная</a>
+                    <a href="/controllers/allNewsController.php" class="footer__link">Новости</a>
+                    <a href="/controllers/staticPagesController.php?path=symbols&file_name=symbols" class="footer__link">Государственные символы</a>
+                    <a href="#" class="footer__link">Послание президента</a>
+                    <a href="#" class="footer__link">Цифровой Казахстан</a>
+                    <a href="#" class="footer__link">Пресс-центр</a>
+                    <a href="#" class="footer__link">Социальные вопросы</a>
                     <a href="/controllers/videoController.php" class="footer__link">Видеоролики</a>
                     <a href="/admin/adminController.php" class="footer__link">Войти</a>
                 </div>

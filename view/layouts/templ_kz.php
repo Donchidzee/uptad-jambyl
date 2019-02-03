@@ -100,7 +100,7 @@
         <div class="top-nav__container">
             <a href="/" class="top-nav__link">Басты бет</a>
             <a href="/controllers/allNewsController.php" class="top-nav__link">Жаңалықтар</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Мемлекеттік Рәміздер</a>
+            <a href="/controllers/staticPagesController.php?path=symbols&file_name=symbols" class="top-nav__link top-nav__link_long">Мемлекеттік Рәміздер</a>
             <a href="#" class="top-nav__link top-nav__link_long">Президент жолдауы</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифрлік Қазақстан</a>
             <a href="#" class="top-nav__link top-nav__link_long">Пресс-орталығы</a>
@@ -203,8 +203,9 @@
                 </div>
                 <div class="footer__links col-12 col-lg-5 offset-lg-1 mt-3 mt-lg-0">
                     <h5 class="footer__heading">Пайдалы сілтемелер</h5>
-                    <a href="#" class="footer__link">Басты бет</a>
-                    <a href="#" class="footer__link">Жаңалықтар</a>
+                    <a href="/" class="footer__link">Басты бет</a>
+                    <a href="/controllers/allNewsController.php" class="footer__link">Жаңалықтар</a>
+                    <a href="/controllers/staticPagesController.php?path=symbols&file_name=symbols" class="footer__link">Мемлекеттік Рәміздер</a>
                     <a href="#" class="footer__link">Президент жолдауы</a>
                     <a href="#" class="footer__link">Цифрлік Қазақстан</a>
                     <a href="#" class="footer__link">Пресс-орталығы</a>
