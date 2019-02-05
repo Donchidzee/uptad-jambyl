@@ -163,6 +163,7 @@
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=strategy">Стратегия РК борьбы с коррупцией на 2015-2025 годы</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionLaw">Закон РК о борьбе с коррупцией</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionActivity">Мероприятия по противодействию коррупции</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionPosters">Антикоррупционные постеры</a>
                 </div>
                 <a class="links-block__item" href="/controllers/videoController.php">
                     <span class="links-block__text">Видеоролики</span>

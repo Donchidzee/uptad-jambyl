@@ -165,6 +165,7 @@
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=strategy">Қазақстанның 2015-2025 жылдарға арналған сыбайлас жемқорлыққа қарсы күрес стратегиясы</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionLaw">Қазақстан Республикасының сыбайлас жемқорлыққа қарсы күрес туралы заңы</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionActivity">Сыбайлас жемқорлыққа қарсы іс-шаралар</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=fightCorruption&file_name=corruptionPosters">Антикоррупционные постеры</a>
                 </div>
                 <a class="links-block__item" href="/controllers/videoController.php">
                     <span class="links-block__text">Бейнебаяндар</span>
