@@ -4,6 +4,12 @@ require_once "../../config/config.php";
 require_once "../../db/db.php";
 require_once "../../models/articles.php";
 
+
+// Если пользователь не авторизован, то перенаправялем его на страницу логина
+if ($_SESSION['logined'] !== true) {
+    header('Location: /admin/adminController.php');
+}
+
 if (!empty($_POST)) {
     $connection = db_connect();
     $title_kz = trim($_POST['title_kz']);
