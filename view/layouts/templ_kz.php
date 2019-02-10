@@ -104,7 +104,7 @@
             <a href="#" class="top-nav__link top-nav__link_long">Президент жолдауы</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифрлік Қазақстан</a>
             <a href="#" class="top-nav__link top-nav__link_long">Пресс-орталығы</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Әлеуметтік мәселелер</a>
+            <a href="/controllers/contactUsController.php" class="top-nav__link top-nav__link_long">Әлеуметтік мәселелер</a>
         </div>
     </nav>
 

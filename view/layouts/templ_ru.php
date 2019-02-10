@@ -102,7 +102,7 @@
             <a href="#" class="top-nav__link top-nav__link_long">Послание президента</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифровой Казахстан</a>
             <a href="#" class="top-nav__link">Пресс-центр</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Социальные вопросы</a>
+            <a href="/controllers/contactUsController.php" class="top-nav__link top-nav__link_long">Социальные вопросы</a>
         </div>
     </nav>
 
