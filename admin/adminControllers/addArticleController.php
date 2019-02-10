@@ -11,9 +11,35 @@ if (!empty($_POST)) {
     $text_kz = parse_text(trim($_POST['text_kz']));
     $text_ru = parse_text(trim($_POST['text_ru']));
     $date = trim($_POST['date']);
-    $image = trim($_POST['image']);
+    $image = $_FILES['image']['name'];
 
-    addArticle($connection, $date, $image, $title_kz, $title_ru, $text_kz, $text_ru);
+
+    // Каталог, в который мы будем принимать файл:
+    $uploaddir = '../../assets/img/news/';
+    $uploadfile = $uploaddir . basename($_FILES['image']['name']);
+
+    if (!($_FILES['image']['type'] === 'image/png' || $_FILES['image']['type'] === 'image/jpg')) {
+        die('Тип файла не поддерживается');
+    }
+
+    // Копируем файл из каталога для временного хранения файлов:
+    if (copy($_FILES['image']['tmp_name'], $uploadfile)) {
+        addArticle($connection, $date, $image, $title_kz, $title_ru, $text_kz, $text_ru);
+        header('Location: /admin/adminController.php');
+    } else { 
+        die('Ошибка! Не удалось загрузить файл на сервер!');
+    }
+
+    // Выводим информацию о загруженном файле:
+    // echo "<h3>Информация о загруженном на сервер файле: </h3>";
+    // echo "<p><b>Оригинальное имя загруженного файла: ".$_FILES['image']['name']."</b></p>";
+    // echo "<p><b>Mime-тип загруженного файла: ".$_FILES['image']['type']."</b></p>";
+    // echo "<p><b>Размер загруженного файла в байтах: ".$_FILES['image']['size']."</b></p>";
+    // echo "<p><b>Временное имя файла: ".$_FILES['image']['tmp_name']."</b></p>";
+
+
+
+    
 
 }
 
@@ -22,4 +48,3 @@ function parse_text($str) {
     return $result;
 }
 
-header('Location: /admin/adminController.php');
