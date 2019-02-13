@@ -50,6 +50,17 @@
         </div>
     </div>
 
+    <div class="change-font">
+        <div class="change-font__item" id="font_up">
+            <span class="change-font__big-letter">A</span>
+            <i class="fas fa-caret-up"></i>
+        </div>
+        <div class="change-font__item" id="font_down">
+            <span class="change-font__small-letter">a</span>
+            <i class="fas fa-caret-down"></i>
+        </div>
+    </div>
+
 
     <i class="fas fa-arrow-up go-to-top-button icon-button"></i>
 
@@ -234,6 +245,6 @@
     <script src="/assets/js/fixed-contacts.js" defer></script>
 
     <script src="/assets/js/lang-buttons.js"></script>
-
+    <script src="/assets/js/change-font.js"></script>
 </body>
 </html>
