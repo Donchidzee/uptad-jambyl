@@ -1,0 +1,27 @@
+.change-font {
+    position: fixed;
+    top: 40vh;
+    background-color: $color-1;
+    border-radius: 0 15px 15px 0 ;
+    z-index: 4;
+
+    &__item {
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font : {
+            size: 20px;
+        }
+        cursor: pointer;
+
+        & span {
+            margin-right: 4px;
+        }
+
+        &:hover {
+            color: #FFFC00;
+        }
+    }
+}
