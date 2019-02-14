@@ -206,10 +206,10 @@
             <div class="row">
                 <div class="footer__contacts col-12 col-lg-6">
                     <h5 class="footer__heading">Контакты</h5>
-                    <span class="footer__text">Юридический адрес: РК, г. Алматы, Алатауский район, ул. Нурпеисова, здание 1, н.п. 1</span>
-                    <span class="footer__text">Филиал АО “ForteBank” в г. Алматы</span>
-                    <span class="footer__text">Телефон: +7 (727) 246 32 51</span>
-                    <span class="footer__text">E-mail: ms0418@mail.ru</span>
+                    <span class="footer__text">Юридический адрес: улица Толе би 35 </span>
+                    <span class="footer__text">Телефон: 43-69-51 канцелярия</span>
+                    <span class="footer__text">Телефон: 43-69-52 приемная</span>
+                    <span class="footer__text">E-mail: depdoroga@mail.ru</span>
                 </div>
                 <div class="footer__links col-12 col-lg-5 offset-lg-1 mt-3 mt-lg-0">
                     <h5 class="footer__heading">Полезные ссылки</h5>
