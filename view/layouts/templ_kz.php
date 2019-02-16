@@ -106,7 +106,7 @@
             <a href="/controllers/allNewsController.php" class="top-nav__link">Жаңалықтар</a>
             <a href="/controllers/staticPagesController.php?path=symbols&file_name=symbols" class="top-nav__link top-nav__link_long">Мемлекеттік Рәміздер</a>
             <a href="#" class="top-nav__link top-nav__link_long">Президент жолдауы</a>
-            <a href="#" class="top-nav__link top-nav__link_long">Цифрлік Қазақстан</a>
+            <a href="#" class="top-nav__link top-nav__link_long">Цифрлы Қазақстан</a>
             <a href="#" class="top-nav__link top-nav__link_long">Пресс-орталығы</a>
             <a href="/controllers/contactUsController.php" class="top-nav__link top-nav__link_long">Әлеуметтік мәселелер</a>
         </div>
