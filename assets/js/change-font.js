@@ -1,12 +1,21 @@
-var upButton = document.getElementById('font_up');
-var downButton = document.getElementById('font_down');
+var changeFontButtons = document.getElementsByClassName('blind_mode')
 
-upButton.addEventListener('click', upFont);
-downButton.addEventListener('click', downFont);
+for (var i = 0; i < changeFontButtons.length; i++) {
+    changeFontButtons[i].addEventListener('click', changeFont);
+}
+var blindMode = false;
 
-
-function upFont(e) {
+function changeFont(e) {
     e.preventDefault();
+    if (blindMode) {
+        downFont();
+    } else {
+        upFont();
+    }
+}
+
+
+function upFont() {
     $('.logo__text').css('font-size', '19px').css('font-weight', '500');
     $('.top-nav__link').css('font-size', '20px');
     $('.links-block__text').css('font-size', '19px');
@@ -22,10 +31,10 @@ function upFont(e) {
     $('.article__title').css('font-size', '50px');
     
     $('body').css('font-size', '25px');
+    blindMode = true;
 }
 
-function downFont(e) {
-    e.preventDefault();
+function downFont() {
     $('.logo__text').css('font-size', '17px').css('font-weight', '300');
     $('.contact-bar__lang-button').css('font-weight', '300');
     $('.top-nav__link').css('font-size', '1rem');
@@ -41,4 +50,5 @@ function downFont(e) {
     $('.article__title').css('font-size', '35px');
 
     $('body').css('font-size', 'inherit');
+    blindMode = false;
 }

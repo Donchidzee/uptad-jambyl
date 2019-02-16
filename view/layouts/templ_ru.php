@@ -50,14 +50,9 @@
         </div>
     </div>
 
-    <div class="change-font">
-        <div class="change-font__item" id="font_up">
-            <span class="change-font__big-letter">A</span>
-            <i class="fas fa-caret-up"></i>
-        </div>
-        <div class="change-font__item" id="font_down">
-            <span class="change-font__small-letter">a</span>
-            <i class="fas fa-caret-down"></i>
+    <div class="change-font hide-mobile">
+        <div class="change-font__item">
+            <i class="fas fa-eye-slash blind_mode"></i>
         </div>
     </div>
 
@@ -89,6 +84,7 @@
 
         <div class="header__input">
             <i class="fas fa-bars header__menu-open-button icon-button hide-desktop"></i>
+            <i class="fas fa-eye-slash hide-desktop header__change-font-button blind_mode"></i>
             <form class="search-field header__search" action="/controllers/searchController.php" method="get">
                 <div class="animated-search">
                     <div class="animated-search__search-box">

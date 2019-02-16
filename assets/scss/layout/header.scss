@@ -5,6 +5,16 @@
         align-items: center;
     }
 
+    &__change-font-button {
+        color: $color-1;
+        font-size: 30px;
+        cursor: pointer;
+
+        &:hover {
+            color: #FFFC00;
+        }
+    }
+
     @media all and (min-width: $md) {
         width: 95%;
         display: flex;
