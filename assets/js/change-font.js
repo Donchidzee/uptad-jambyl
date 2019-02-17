@@ -30,6 +30,7 @@ function upFont() {
     $('.odometer-block__text').css('font-size', '25px');
     $('.article__title').css('font-size', '50px');
     
+    $('.person-info').css('height', '550px');
     $('body').css('font-size', '25px');
     blindMode = true;
 }
@@ -49,6 +50,7 @@ function downFont() {
     $('.odometer-block__text').css('font-size', '1rem');
     $('.article__title').css('font-size', '35px');
 
+    $('.person-info').css('height', '460px');
     $('body').css('font-size', 'inherit');
     blindMode = false;
 }
