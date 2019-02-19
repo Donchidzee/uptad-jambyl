@@ -175,6 +175,10 @@
                     <span class="links-block__text">Бейнебаяндар</span>
                     <i class="fas fa-angle-right"></i>
                 </a>
+                <a class="links-block__item" href="/controllers/galleryController.php">
+                    <span class="links-block__text">Фотогалерея</span>
+                    <i class="fas fa-angle-right"></i>
+                </a>
             </aside>
             <main class="main news-slider col-12 col-lg-7 mt-4 mt-lg-0">
                 {CONTENT}
