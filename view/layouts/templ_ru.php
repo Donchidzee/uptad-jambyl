@@ -52,7 +52,7 @@
 
     <div class="change-font hide-mobile">
         <div class="change-font__item">
-            <i class="fas fa-eye-slash blind_mode"></i>
+            <i class="fas fa-eye-slash blind_mode hide-desktop"></i>
         </div>
     </div>
 

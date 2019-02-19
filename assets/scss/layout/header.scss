@@ -9,10 +9,6 @@
         color: $color-1;
         font-size: 30px;
         cursor: pointer;
-
-        &:hover {
-            color: #FFFC00;
-        }
     }
 
     @media all and (min-width: $md) {
