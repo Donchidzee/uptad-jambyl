@@ -96,8 +96,6 @@
                 </div>
             </form>
         </div>
-
-        
     </header>
 
     <nav class="top-nav">
@@ -159,8 +157,8 @@
                 <div class="collapse links-block__collapse" id="collapse-4">
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesLaw">Закон РК "Об оказываемых государственных услугах"</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegistry">Реестр государственных услуг</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegulations">Стандарт оказываемых государственных услуг</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesStandart">Регламент оказываемых государственных услуг</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesStandart">Стандарт оказываемых государственных услуг</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegulations">Регламент оказываемых государственных услуг</a>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-5">
                     <span class="links-block__text">Борьба против коррупции</span>

@@ -158,8 +158,8 @@
                 <div class="collapse links-block__collapse" id="collapse-4">
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesLaw">«Мемлекеттік көрсетілетін қызметтер туралы» Қазақстан Республикасының заңы</a>
                     <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegistry">Мемлекеттік қызметтер тізілімі</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegulations">Мемлекеттік қызметтер стандарттары</a>
-                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesStandart">Көрсетілетін мемлекеттік қызметтер туралы ереже</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesStandart">Мемлекеттік қызметтер стандарттары</a>
+                    <a class="links-block__collapse-text" href="/controllers/staticPagesController.php?path=govServices&file_name=servicesRegulations">Көрсетілетін мемлекеттік қызметтер туралы ереже</a>
                 </div>
                 <a class="links-block__item" data-toggle="collapse" data-target="#collapse-5">
                     <span class="links-block__text">Сыбайлас жемқорлыққа қарсы күрес</span>
