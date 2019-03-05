@@ -49,12 +49,13 @@
             <span class="fixed-contacts__animated-text fixed-contacts__email" id="fixed-contacts__animated-email-text">uptad-jambyl@mail.ru</span>
         </div>
     </div>
-
+    
     <div class="change-font hide-mobile">
         <div class="change-font__item">
-            <i class="fas fa-eye-slash blind_mode hide-desktop"></i>
+            <i class="fas fa-eye-slash blind_mode"></i>
         </div>
     </div>
+
 
 
     <i class="fas fa-arrow-up go-to-top-button icon-button"></i>
@@ -106,7 +107,7 @@
             <a href="/controllers/staticPagesController.php?path=symbols&file_name=symbols" class="top-nav__link top-nav__link_long">Государственные символы</a>
             <a href="/controllers/staticPagesController.php?path=president_message&file_name=president_message" class="top-nav__link top-nav__link_long">Послание президента</a>
             <a href="#" class="top-nav__link top-nav__link_long">Цифровой Казахстан</a>
-            <a href="#" class="top-nav__link">Пресс-центр</a>
+            <a href="/controllers/staticPagesController.php?path=press_center&file_name=press_center" class="top-nav__link">Пресс-центр</a>
             <a href="/controllers/contactUsController.php" class="top-nav__link top-nav__link_long">Социальные вопросы</a>
         </div>
     </nav>
