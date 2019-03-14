@@ -1,8 +1,14 @@
 <?php
+session_start();
 
 require_once "../../config/config.php";
 require_once "../../db/db.php";
 require_once "../../models/articles.php";
+
+// Если пользователь не авторизован, то перенаправялем его на страницу логина
+if ($_SESSION['logined'] !== true) {
+    header('Location: /admin/adminController.php');
+}
 
 if (!empty($_POST) && !empty($_GET)) {
     $connection = db_connect();

@@ -8,7 +8,6 @@ require_once "../lib/templ_engine.php";
 
 
 
-//unset($_SESSION['logined']);
 $tpl = new template_class;
 
 // Проверяем, зашел ли пользователь

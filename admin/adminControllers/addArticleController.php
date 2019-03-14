@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once "../../config/config.php";
 require_once "../../db/db.php";
@@ -24,14 +25,16 @@ if (!empty($_POST)) {
     $uploaddir = '../../assets/img/news/';
     $uploadfile = $uploaddir . basename($_FILES['image']['name']);
 
-    if (!($_FILES['image']['type'] === 'image/png' || $_FILES['image']['type'] === 'image/jpg')) {
+    // Поддерживаемые типы - png, jpg
+    if (!($_FILES['image']['type'] === 'image/png' || $_FILES['image']['type'] === 'image/jpeg')) {
         die('Тип файла не поддерживается');
     }
 
     // Копируем файл из каталога для временного хранения файлов:
     if (copy($_FILES['image']['tmp_name'], $uploadfile)) {
-        addArticle($connection, $date, $image, $title_kz, $title_ru, $text_kz, $text_ru);
-        header('Location: /admin/adminController.php');
+        if(addArticle($connection, $date, $image, $title_kz, $title_ru, $text_kz, $text_ru)) {
+            header('Location: /admin/adminController.php');
+        };
     } else { 
         die('Ошибка! Не удалось загрузить файл на сервер!');
     }
@@ -49,6 +52,7 @@ if (!empty($_POST)) {
 
 }
 
+// Заменяем все переносы строки на тег p
 function parse_text($str) {
     for ($result = '', $i = 0, $a = explode("\r\n", $str), $s = sizeof($a); $i < $s && ($result .= (!strlen($a[$i])?$a[$i]:'<p>'.$a[$i].'</p>')."\n") !== FALSE; ++$i); 
     return $result;

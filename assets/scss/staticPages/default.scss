@@ -1,0 +1,16 @@
+.press-center {
+    &__image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    @media all and (min-width: $lg) {
+
+        &__image {
+            width: 60%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+    }
+}
